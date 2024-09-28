@@ -1,0 +1,145 @@
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #122F67;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 24px;
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-size: 12px;
+    color: grey;
+}
+
+/* Game Container */
+.game-container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Player Card */
+.player {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0073e6;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+/* Higher button style */
+#higher-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+
+/* Optional: Hover effects */
+#higher-btn:hover {
+    background-color: #218838; /* Darker green */
+}
+
+
+/* Lower button style - yellow/orange */
+#lower-btn {
+    background-color: #fb8c00; /* Yellow/Orange */
+    color: white;
+}
+
+#lower-btn:hover {
+    background-color: #ef6c00; /* Darker yellow/orange */
+}
+
+
+/* Score and high score alignment */
+#score, #high-score {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Add spacing between the scores */
+#high-score {
+    margin-right: auto; /* Align to the left */
+}
+
+#score {
+    margin-left: auto; /* Align to the right */
+}
+
+.hidden {
+    display: none;
+}
+
+#game-over {
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#game-over-message {
+    margin-top: 20px;
+}
+
+#play-again-btn {
+    margin-top: 20px;
+}
+
+#game-over.visible {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .controls {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

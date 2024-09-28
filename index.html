@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher or Lower - West Brom Players</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>West Brom Higher or Lower</h1>
+        <h3>Who has more appearances?</h3>
+        <h4>*Based on data up to 17th May 2024*</h4>
+        <div id="game">
+            <!-- Player Left Section -->
+            <div id="player-left" class="player">
+                <h2 id="left-name">Player 1</h2>
+                <p id="left-appearances">Appearances: 100</p>
+            </div>
+
+            <!-- Higher or Lower Buttons -->
+            <div class="controls">
+                <button id="higher-btn">Higher</button>
+                <button id="lower-btn">Lower</button>
+            </div>
+
+            <!-- Player Right Section -->
+            <div id="player-right" class="player">
+                <h2 id="right-name">Player 2</h2>
+                <p id="right-appearances" style="display: none;">Appearances: 0</p>
+            </div>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="game-over" class="hidden">
+            <h2>Game Over</h2>
+            <p id="game-over-message"></p>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+
+        <!-- Score Counter -->
+        <div style="display: flex; justify-content: space-between;">
+            <span id="high-score">High Score: 0</span>
+            <span id="score">Score: 0</span>
+        </div>
+    </div>
+
+    <script src="data/west_brom_data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
